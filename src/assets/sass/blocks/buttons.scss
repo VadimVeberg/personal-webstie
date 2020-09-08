@@ -1,0 +1,62 @@
+.button {
+
+    transition: color .1s ease-in,
+    background-color .1s ease-in;
+
+    &:hover{
+        cursor: pointer;
+    } 
+
+    &:focus{
+        outline: none;
+    }
+
+    &_pink {
+        width: 207px;
+        height: 45px;
+
+        color: #f53f4f;
+        background-color: transparent;
+        border: 1px solid $pink;
+
+        font-size: 16px;
+
+        &:hover {
+            color: $white;
+            background-color: #f53f4f;
+        }
+
+        &:active {
+            background-color: darken(#f53f4f, 10%);
+        }
+    }
+
+    &_orange {
+        color: $white;
+
+        font-size: 18px;
+        
+        background-color: $orange;
+        border: 1px solid $orange;
+
+        height: 60px;
+        width: 270px;
+
+        &:hover {
+            color: $orange;
+            
+            background-color: $white;
+        }
+
+        &:active {
+            background-color: darken( $white, 2%);
+        }
+
+        @media (max-width: 576px) {
+            width: 280px;
+        }
+    }
+}
+
+
+

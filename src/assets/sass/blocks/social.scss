@@ -1,0 +1,31 @@
+.social {
+    display: flex;
+    align-items: flex-end;
+}
+
+.social__icon {
+    fill: $gray;
+
+    margin-left: 30px;
+
+    &_fb {
+        height: 23px;
+        width: 18px;
+
+        margin-left: 0;
+    }
+
+    &_inst {
+        height: 24px;
+        width: 24px;
+    }
+
+    &_github {
+        height: 24px;
+        width: 24px;
+    }
+
+    &:hover {
+        fill: $pink;
+    }
+}

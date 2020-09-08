@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge">-->
+    <meta name="viewport" content="width=device-width">
+    <!-- <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content=""> --> 
+    
+    <title>HomePage</title>
+</head>
+<body>
+
+    <svg style="display: none">
+        <symbol id="phone" viewBox="0 0 513.64 513.64" >
+            <g>
+                <path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72
+                    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68
+                    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44
+                    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"/>
+            </g>
+        </symbol>
+        <symbol id="email" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <g>
+                        <polygon points="339.392,258.624 512,367.744 512,144.896 		"/>
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <polygon points="0,144.896 0,367.744 172.608,258.624 		"/>
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/>
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                            L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/>
+                    </g>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+                        C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+                        h192c61.76,0,112,50.24,112,112V352z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+                        c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <circle cx="393.6" cy="118.4" r="17.056"/>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"/>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="github" viewBox="0 0 512 512">
+            <g>
+                <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+                    c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+                    c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+                    c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
+                    c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
+                    c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
+                    c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
+                    c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
+                    c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
+            </g>
+        </symbol>
+        <symbol id="menu" viewBox="0 0 459 459">
+            <g>
+                <path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z"/>
+            </g>
+        </symbol>
+    </svg>
+<!-- <div class="page"> -->
+    <header class="header">
+        <div class="container">
+            <div class=" header__container">
+                <nav class="nav_mobile header__nav_mobile">
+                    <button class="menu-button">
+                        <svg class="menu-button__icon">
+                            <use xlink:href="#menu"></use>
+                        </svg>
+                    </button>
+                </nav>
+                <nav class="nav header__nav">
+                    <a class="nav__link" href="#">Услуги</a>
+                    <a class="nav__link" href="#">Портфолио</a>
+                    <a class="nav__link" href="#">Стоимость</a>
+                </nav>
+                <a class="phone header__phone" href="tel:+79955063256">
+                    +7 (995) 506 32 56
+                </a>
+                <button class="button button_pink call-button">
+                    Заказать звонок
+                </button>
+                <button class="call-button call-button_mobile">
+                    <svg class="call-button__icon">
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- <div class="content"> -->
+        
+        <section class="intro">
+            <div class="container intro__container">
+                <div class="intro__info">
+                    <h1 class="h1 intro__title">Вадим Веберг</h1>
+                    <p class="intro__text">Frontend-разработчик и&nbsp;веб-верстальщик</p>
+                    <button class="button intro__button button_orange">
+                        Узнать больше
+                    </button>
+                </div>
+                <div class="intro__visual">
+                    <div class="circle"></div>
+                    <img class="author" src="assets/img/me.png">
+                </div>
+            </div> <!-- ./container-->
+        </section> <!-- ./intro-->
+        
+        <section class="services">
+            <div class="container column-center-container">
+                    <h2 class="h2 services__title">Что я делаю</h2>
+                    <div class="container services__container">
+                        <div class="row no-gutters">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
+                                <img class="services__item__img" src="assets/img/services/tools-and-utensils.png">
+                                <p class="services__item__text">Вёрстка лендинг&mdash;страниц
+                                    и&nbsp;сайтов любой сложности</p>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
+                                <img class="services__item__img" src="assets/img/services/responsive.png">
+                                <p class="services__item__text">Адаптивная вёрстка под все
+                                    браузеры и&nbsp;устройства</p>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
+                                <img class="services__item__img" src="assets/img/services/programming.png">
+                                <p class="services__item__text">Frontend&mdash;разработка
+                                    и&nbsp;программирование</p>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
+                                <img class="services__item__img" src="assets/img/services/coding.png">
+                                <p class="services__item__text">Исправление и&nbsp;доработка
+                                    существующей вёрстки</p>
+                            </div>
+                        </div><!-- ./row-->
+                    </div> <!--./container-->
+                    <button class="button services__item__button button_orange">
+                        Узнать стоимость
+                    </button>
+            </div> <!--./container-->
+        </section> <!-- ./services-->
+        
+        <section class="examples">
+            <div class="container column-center-container">
+                <h2 class="h2 examples__title">Примеры моих работ</h2>
+                <!-- <div class="container examples-carousel">
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 examples-carousel__item">
+                            <img class="examples-carousel__img">
+                            <p class="examples-carousel__item__text">Coming soon</p>
+                        </div>
+                        <div class="col-lg-4 examples-carousel__item">
+                            <img class="examples-carousel__img">
+                            <p class="examples-carousel__item__text">Coming soon</p>
+                        </div>
+                        <div class="col-lg-4 examples-carousel__item">
+                            <img class="examples-carousel__img">
+                            <p class="examples-carousel__item__text">Coming soon</p>
+                        </div>
+                    </div> 
+                </div> -->
+                <!--./examples-carousel-->
+                <button class="button examples__button button_orange">
+                    Заказать проект
+                </button>
+            </div> <!--./container-->
+        </section> <!-- ./examples-->
+        
+        <secion class="cost">
+            <div class="container">
+                <h3 class="h3 cost__title">Адаптивная вёрстка под все устройства
+                    и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h3>
+                <p class="cost__text">
+                    * Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально,
+                    в&nbsp;зависимости от&nbsp;сложности задач.
+                </p>
+            </div>
+        </secion><!-- ./cost-->
+        
+    <!-- </div> -->
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="row no-gutters">
+                <div class="col-lg-4">
+                    <nav class="nav footer__nav">
+                        <a class="footer__nav__link" href="">Услуги</a>
+                        <a class="footer__nav__link" href="">Портфолио</a>
+                        <a class="footer__nav__link" href="">Стоимость</a>                    
+                    </nav>
+                </div>
+                <div class="col-lg-5">
+                    <div class="contacts">
+                        <a class="contacts__link contacts__phone" href="tel:+79955063256" target="_blank">
+                            <svg class="contacts__icon contacts__icon_phone">
+                                <use xlink:href="#phone"></use>
+                            </svg>
+                            <span>+7 (995) 506 32 56</span>
+                        </a>
+                        <a class="contacts__link contacts__email" href="mailto:vadimveberg@gmail.com" target="_blank">
+                            <svg class="contacts__icon  contacts__icon_email">
+                                <use xlink:href="#email"></use>
+                            </svg>
+                            <span>vadimveberg@gmail.com</span>
+                        </a>
+                    </div>                
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer__links">
+                        <button class="button button_pink footer__call-button">
+                            Заказать звонок
+                        </button>
+                        <div class="social footer__social">
+                            <a class="social__link" href="https://www.facebook.com/vadim.veberg.54/" target="_blank">
+                                <svg class="social__icon social__icon_fb">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__link" href="https://github.com/VadimVeberg" target="_blank">
+                                <svg class="social__icon social__icon_inst">
+                                    <use xlink:href="#github"></use>
+                                </svg>
+                            </a>
+                            <a class="social__link" href="https://www.instagram.com/fakecomfort/" target="_blank">
+                                <svg class="social__icon social__icon_github">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </div> <!-- ./social-->
+                    </div> <!-- ./footer__links-->
+                </div>
+            </div>  <!--./row-->
+        </div> <!-- ./container-->
+        <div class="footer__copyright">
+            <small class="footer__copyright__text">© Вадим Веберг, 2018-2020</small>
+        </div>
+    </footer><!-- </div> -->
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>

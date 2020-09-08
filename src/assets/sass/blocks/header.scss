@@ -1,0 +1,37 @@
+.header {
+    padding-left: 0;
+    background-color: $light_gray;
+}
+
+.header__container {
+    padding-top: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    flex-grow: 1;
+
+    &_mobile {
+        flex-grow: 1;
+
+        @media (max-width: 576px) {
+            flex-grow: 0;
+        }
+    }
+}
+
+.header__phone {
+    font-weight: 700;
+    margin-right: 30px;
+
+    @media (max-width: 576px) {
+        flex-grow: 1;
+        margin-right: 0;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+

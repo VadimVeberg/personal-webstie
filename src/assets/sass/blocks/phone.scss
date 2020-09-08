@@ -1,0 +1,17 @@
+.phone {
+    color: $black;
+
+    font-size: 25px;
+    
+    &:hover {
+        color: $pink;
+    }
+
+    @media (max-width: 720px) {
+        margin-right: 14px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 18px;
+    }
+}

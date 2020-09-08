@@ -1,0 +1,37 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__link {
+    color: $black;
+
+    font-size: 25px;
+    
+    &:hover {
+        color: $pink;
+    }
+
+    &:hover .contacts__icon{
+        fill: $orange;
+    }
+}
+
+.contacts__icon {
+    width: 22px;
+    height: 22px;
+
+    fill: $pink;
+
+    &_phone {
+        margin-right: 17px;
+    }
+
+    &_email {
+        margin-right: 22px;
+    }
+}
+
+.contacts__email {
+    margin-top: 25px;
+}

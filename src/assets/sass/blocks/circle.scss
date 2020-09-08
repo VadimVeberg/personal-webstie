@@ -1,0 +1,49 @@
+.circle {
+    border-radius: 74% 26% 68% 32% / 68% 62% 38% 32%;
+    background: linear-gradient(200deg, #fa0891 30%, #f26127 70%);
+    z-index: 0;    
+
+    width: 851px;
+    height: 855px;
+
+    position: absolute;
+    bottom: -450px;
+    right: -190px;
+
+    animation: circleRadius 6s alternate infinite;
+
+    @media (max-width: 1440px) {
+        right: -400px;
+        bottom: -490px;
+    }
+
+    @media (max-width: 992px) {
+        right: -460px;
+    }
+
+    @media (max-width: 768px) {
+        right: -650px;
+    }
+    
+    @media (max-width: 576px) {
+        width: 420px;
+        height: 110%;
+
+        bottom: -120px;
+        right: -100px;
+    }
+}
+
+@keyframes circleRadius{
+    0% {
+        border-radius: 68% 32% 48% 52% / 83% 76% 24% 17%;
+    }
+
+    50% {
+        border-radius: 47% 53% 48% 52% / 74% 82% 18% 26% ;
+    }
+    
+    100% {
+        border-radius: 54% 46% 48% 52% / 53% 68% 32% 47%;
+    }
+}

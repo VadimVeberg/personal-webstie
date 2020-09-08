@@ -1,0 +1,66 @@
+@import "fonts";
+@import "vars";
+
+
+/* Bootstrap */
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+
+/* Default styles */
+html {
+    font-size: 20px;
+	font: 400 20px/1 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+
+    // width: 100%;
+
+    background-color: $white;
+
+    // font-size: 1rem;
+    line-height: 1;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+
+/* Blocks */
+@import "blocks/buttons";
+@import "blocks/links";
+@import "blocks/titles";
+@import "blocks/containers";
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/phone";
+@import "blocks/call-button";
+
+@import "blocks/intro";
+@import "blocks/author";
+@import "blocks/circle";
+
+@import "blocks/services";
+
+@import "blocks/examples";
+
+@import "blocks/cost";
+
+@import "blocks/footer";
+@import "blocks/contacts";
+@import "blocks/social";
+
+

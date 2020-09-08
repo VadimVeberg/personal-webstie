@@ -1,0 +1,27 @@
+.container {    
+    max-width: 1170px;
+    min-width: 320px;
+
+    padding: 0;
+
+    @media (max-width: 1200px) {
+        padding: 0 40px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 0 20px;
+    }
+}
+
+.column-center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.align-right-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}

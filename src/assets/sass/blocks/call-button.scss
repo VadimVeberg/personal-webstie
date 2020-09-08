@@ -1,0 +1,28 @@
+.call-button {
+        
+    @media (max-width: 576px) {
+        display: none;
+    }
+
+    &_mobile {
+        width: 26px;
+        height: 26px;
+
+        border-radius: 50%;
+        border: 1px solid $pink;
+
+        display: none;
+
+        background-color: transparent;
+
+        @media (max-width: 576px) {
+            display: block;
+        }
+    }
+}
+
+.call-button__icon {
+    width: 100%;
+    height: 100%;
+    fill: $pink;
+}

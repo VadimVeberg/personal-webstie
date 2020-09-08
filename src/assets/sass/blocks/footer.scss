@@ -1,0 +1,57 @@
+.footer {
+    background-color: $light_gray;
+}
+
+.footer__inner {
+    padding: 75px 0 83px;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__nav__link {
+    color: $gray;
+
+    margin-top: 20px;
+
+    &:hover {
+        color: $pink;
+    }
+    &:nth-child(1) {
+        margin-top: 10px;
+    }
+}
+
+.footer__phone {
+    font-weight: 400;
+}
+
+.footer__links {
+    padding-right: 22px;
+}
+
+.footer__call-button {
+    width: 247px;
+}
+
+.footer__social {
+    margin-top: 32px;
+}
+
+.footer__copyright {
+    background-color: #31293c;
+
+    height: 80px;
+
+    color: $white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copyright__text {
+    font-size: 16px;
+}
