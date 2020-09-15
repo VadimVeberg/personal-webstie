@@ -19,6 +19,10 @@
 <body>
 
     <svg style="display: none">
+        <symbol id="close" viewBox="0 0 512.001 512.001" enable-background="new 0 0 512.001 512.001">
+            <g><path d="m512.001 84.853-84.853-84.853-171.147 171.147-171.148-171.147-84.853 84.853 171.148 171.147-171.148 171.148 84.853 84.853 171.148-171.147 171.147 171.147 84.853-84.853-171.148-171.148z"/>
+            </g>
+        </symbol>
         <symbol id="phone" viewBox="0 0 513.64 513.64" >
             <g>
                 <path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72
@@ -100,19 +104,29 @@
     </svg>
 <!-- <div class="page"> -->
     <header class="header">
-        <div class="container">
-            <div class=" header__container">
-                <nav class="nav_mobile header__nav_mobile">
-                    <button class="menu-button">
-                        <svg class="menu-button__icon">
+        <div class="container header__container">
+                <div class="header__menu">
+                    <button class="menu-button header__menu-button">
+                        <svg class="menu-button__icon menu-button__icon--open">
                             <use xlink:href="#menu"></use>
                         </svg>
+                        <svg class="menu-button__icon menu-button__icon--close">
+                            <use xlink:href="#close"></use>
+                        </svg>
                     </button>
-                </nav>
-                <nav class="nav header__nav">
-                    <a class="nav__link" href="#">Услуги</a>
-                    <a class="nav__link" href="#">Портфолио</a>
-                    <a class="nav__link" href="#">Стоимость</a>
+                </div>
+                <nav class="main-nav header__main-nav">
+                    <ul class="site-list header__site-list">
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">Услуги</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">Портфолио</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">Стоимость</a>
+                        </li>
+                    </ul>
                 </nav>
                 <a class="phone header__phone" href="tel:+79955063256">
                     +7 (995) 506 32 56
@@ -125,7 +139,6 @@
                         <use xlink:href="#phone"></use>
                     </svg>
                 </button>
-            </div>
         </div>
     </header>
 

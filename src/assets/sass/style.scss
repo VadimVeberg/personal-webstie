@@ -44,10 +44,12 @@ p, h1, h2, h3 {
 @import "blocks/containers";
 
 @import "blocks/page";
-@import "blocks/header";
-@import "blocks/nav";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/menu-button";
 @import "blocks/phone";
 @import "blocks/call-button";
+@import "blocks/header";
 
 @import "blocks/intro";
 @import "blocks/author";

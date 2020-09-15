@@ -1,0 +1,10 @@
+.main-nav {
+    font-size: 16px;
+    font-weight: 400;
+
+    @media (max-width: 576px) {
+        font-size: 13px;
+    }
+}
+
+
