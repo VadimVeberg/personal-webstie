@@ -7,31 +7,8 @@
     height: 855px;
 
     position: absolute;
-    bottom: -450px;
-    right: -190px;
-
-    animation: circleRadius 6s alternate infinite;
-
-    @media (max-width: 1440px) {
-        right: -400px;
-        bottom: -490px;
-    }
-
-    @media (max-width: 992px) {
-        right: -460px;
-    }
-
-    @media (max-width: 768px) {
-        right: -650px;
-    }
     
-    @media (max-width: 576px) {
-        width: 420px;
-        height: 110%;
-
-        bottom: -120px;
-        right: -100px;
-    }
+    animation: circleRadius 6s alternate infinite;
 }
 
 @keyframes circleRadius{

@@ -2,56 +2,99 @@
     background-color: $light_gray;
 }
 
-.footer__inner {
-    padding: 75px 0 83px;
+.footer__container {
+    padding-top: 75px;
+    padding-bottom: 83px;
+
+    @media (max-width: 576px) {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
 }
 
 .footer__nav {
-    display: flex;
     flex-direction: column;
 }
 
-.footer__nav__link {
+.footer__site-item {
+    margin-bottom: 20px;
+}
+
+.footer__site-link {
     color: $gray;
 
-    margin-top: 20px;
-
     &:hover {
-        color: $pink;
+        color: $black;
     }
-    &:nth-child(1) {
-        margin-top: 10px;
+
+    @media (max-width: 576px) {
+        font-size: 15px;
     }
 }
 
-.footer__phone {
-    font-weight: 400;
+.footer__contacts {
+    @media (max-width: 992px) {
+        margin-top: 0;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 25px;
+    }
 }
 
-.footer__links {
-    padding-right: 22px;
+.footer__contact-text {
+    @media (max-width: 576px) {
+        color: $gray;
+        font-size: 20px;
+    }
 }
 
-.footer__call-button {
+.footer__button {
     width: 247px;
+
+    @media (max-width: 992px) {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 25px;
+        width: 247px;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+
+    &--orange {
+        @media (max-width: 576px) {
+            color: $white;
+
+            font-size: 18px;
+            
+            background-color: $orange;
+            border: 1px solid $orange;
+
+            &:hover {
+                color: $orange;
+                
+                background-color: $white;
+            }
+
+            &:active {
+                background-color: darken( $white, 2%);
+            }
+
+        }
+        
+    }
+
 }
 
 .footer__social {
     margin-top: 32px;
+    @media (max-width: 576px) {
+        margin-top: 50px;
+    }
 }
 
-.footer__copyright {
-    background-color: #31293c;
-
-    height: 80px;
-
-    color: $white;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer__copyright__text {
-    font-size: 16px;
-}

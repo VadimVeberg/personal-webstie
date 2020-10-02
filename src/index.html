@@ -8,52 +8,53 @@ title: HomePage
         <div class="intro__info">
             <h1 class="h1 intro__title">Вадим Веберг</h1>
             <p class="intro__text">Frontend-разработчик и&nbsp;веб-верстальщик</p>
-            <button class="button intro__button button_orange">
+            <button class="button intro__button button--orange">
                 Узнать больше
             </button>
         </div>
         <div class="intro__visual">
-            <div class="circle"></div>
-            <img class="author" src="assets/img/me.png">
+            <div class="circle intro__circle"></div>
+            <img class="author intro__author" src="assets/img/me.png">
         </div>
     </div> <!-- ./container-->
 </section> <!-- ./intro-->
 
-<section class="services">
-    <div class="container column-center-container">
+<section class="services" id="services">
+    <div class="container container--column-center">
             <h2 class="h2 services__title">Что я делаю</h2>
             <div class="container services__container">
                 <div class="row no-gutters">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
-                        <img class="services__item__img" src="assets/img/services/tools-and-utensils.png">
-                        <p class="services__item__text">Вёрстка лендинг&mdash;страниц
+                        <img class="services__img" src="assets/img/services/tools-and-utensils.png">
+                        <p class="services__text">Вёрстка лендинг&mdash;страниц
                             и&nbsp;сайтов любой сложности</p>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
-                        <img class="services__item__img" src="assets/img/services/responsive.png">
-                        <p class="services__item__text">Адаптивная вёрстка под все
+                        <img class="services__img" src="assets/img/services/responsive.png">
+                        <p class="services__text">Адаптивная вёрстка под все
                             браузеры и&nbsp;устройства</p>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
-                        <img class="services__item__img" src="assets/img/services/programming.png">
-                        <p class="services__item__text">Frontend&mdash;разработка
+                        <img class="services__img" src="assets/img/services/programming.png">
+                        <p class="services__text">Frontend&mdash;разработка
                             и&nbsp;программирование</p>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
-                        <img class="services__item__img" src="assets/img/services/coding.png">
-                        <p class="services__item__text">Исправление и&nbsp;доработка
+                        <img class="services__img" src="assets/img/services/coding.png">
+                        <p class="services__text">Исправление и&nbsp;доработка
                             существующей вёрстки</p>
                     </div>
                 </div><!-- ./row-->
             </div> <!--./container-->
-            <button class="button services__item__button button_orange">
+            <button class="button services__button button--orange">
                 Узнать стоимость
             </button>
     </div> <!--./container-->
 </section> <!-- ./services-->
 
-<section class="examples">
-    <div class="container column-center-container">
+<!--TODO break-->
+<section class="examples" id="examples">
+    <div class="container container--column-center">
         <h2 class="h2 examples__title">Примеры моих работ</h2>
         <!-- <div class="container examples-carousel">
             <div class="row no-gutters">
@@ -72,19 +73,36 @@ title: HomePage
             </div> 
         </div> -->
         <!--./examples-carousel-->
-        <button class="button examples__button button_orange">
+        <button class="button examples__button button--orange">
             Заказать проект
         </button>
     </div> <!--./container-->
 </section> <!-- ./examples-->
 
-<secion class="cost">
-    <div class="container">
+<section class="cost" id="cost">
+    <div class="container cost__container">
         <h3 class="h3 cost__title">Адаптивная вёрстка под все устройства
-            и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h3>
+            и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h3> 
         <p class="cost__text">
             * Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально,
             в&nbsp;зависимости от&nbsp;сложности задач.
         </p>
     </div>
-</secion><!-- ./cost-->
+</section>
+
+<div class="modal">
+    <div class="modal__overlay">
+        <!--TODO break contact-form design-->
+        <!--TODO add action to form-->
+        <form class="contact-form modal__contact-form" method="post" action="">
+            <!--TODO break form desing on small devices and close-button layout-->
+            <button class="close-button contact-form __close-button"></button>
+            <span class="contact-form__title">Оставьте ваши данные для связи</span>
+            <label class="contact-form__label" for="userName">Ваше имя:</label>
+            <input class="contact-form__input" required type="text" placeholder="Имя" name="userName">
+            <label class="contact-form__label" for="userPhone">Номер для связи:</label>
+            <input class="contact-form__input" required type="text" placeholder="Номер телефона" name="userPhone">
+            <button class="contact-form__button button button--orange" type="submit">Перезвонить мне</button>
+        </form>
+    </div>
+</div>

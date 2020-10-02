@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.contacts__link {
+.contacts__contact-link {
     color: $black;
 
     font-size: 25px;
@@ -15,23 +15,37 @@
     &:hover .contacts__icon{
         fill: $orange;
     }
+
+    @media (max-width: 992px) {
+        font-size: 23px;
+    }
 }
 
-.contacts__icon {
+.contacts__contact-icon {
     width: 22px;
     height: 22px;
 
     fill: $pink;
 
-    &_phone {
+    &--phone {
         margin-right: 17px;
     }
 
-    &_email {
+    &--email {
         margin-right: 22px;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 576px) {
+        width: 15px;
+        height: 15px;
     }
 }
 
+.contacts__text {
+    color: inherit;
+    font-size: inherit;
+}
 .contacts__email {
     margin-top: 25px;
 }

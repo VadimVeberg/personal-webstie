@@ -1,35 +1,14 @@
 .site-list {
     padding: 0;
+    margin: 0;
 }
 
-.site-list__item {
+.site-list__site-item {
+    cursor: pointer;
     list-style-type: none;
-    display: inline-block;  
 }
 
-.site-list__link {
+.site-list__site-link {
     position: relative;
 
-    margin-right: 30px;
-
-    color: $black;
-
-    &:hover {
-        color: $pink;
-
-        &::after {
-            content: '';
-
-            background-color: $pink;
-
-            width: 100%;
-            height: 1px;
-
-            margin: 0;
-
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-        }
-    }
 }

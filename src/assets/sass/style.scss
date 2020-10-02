@@ -17,7 +17,7 @@ html {
 body {
     margin: 0;
 
-    // width: 100%;
+    min-width: 320px;
 
     background-color: $white;
 
@@ -51,9 +51,9 @@ p, h1, h2, h3 {
 @import "blocks/call-button";
 @import "blocks/header";
 
-@import "blocks/intro";
 @import "blocks/author";
 @import "blocks/circle";
+@import "blocks/intro";
 
 @import "blocks/services";
 
@@ -64,5 +64,9 @@ p, h1, h2, h3 {
 @import "blocks/footer";
 @import "blocks/contacts";
 @import "blocks/social";
+@import "blocks/copyright";
+
+@import "blocks/modal";
+@import "blocks/contact-form";
 
 

@@ -1,32 +1,40 @@
 <footer class="footer">
-    <div class="container footer__inner">
+    <div class="container footer__container">
         <div class="row no-gutters">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-3 col-sm-12">
                 <nav class="nav footer__nav">
-                    <a class="footer__nav__link" href="">Услуги</a>
-                    <a class="footer__nav__link" href="">Портфолио</a>
-                    <a class="footer__nav__link" href="">Стоимость</a>                    
+                    <ul class="site-list">
+                        <li class="site-list__site-item footer__site-item">
+                            <a class="site-list__site-link footer__site-link" href="#services">Услуги</a>
+                        </li>
+                        <li class="site-list__site-item footer__site-item">
+                            <a class="site-list__site-link footer__site-link" href="#examples">Портфолио</a>
+                        </li>
+                        <li class="site-list__site-item footer__site-item">
+                            <a class="site-list__site-link footer__site-link" href="#cost">Стоимость</a>
+                        </li>
+                    </ul>                 
                 </nav>
             </div>
-            <div class="col-lg-5">
-                <div class="contacts">
-                    <a class="contacts__link contacts__phone" href="tel:+79955063256" target="_blank">
-                        <svg class="contacts__icon contacts__icon_phone">
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="contacts footer__contacts">
+                    <a class="contacts__contact-link" href="tel:+79955063256" target="_blank">
+                        <svg class="contacts__contact-icon contacts__contact-icon--phone">
                             <use xlink:href="#phone"></use>
                         </svg>
-                        <span>+7 (995) 506 32 56</span>
+                        <span class="contacts__contact-text footer__contact-text">+7 (995) 506 32 56</span>
                     </a>
-                    <a class="contacts__link contacts__email" href="mailto:vadimveberg@gmail.com" target="_blank">
-                        <svg class="contacts__icon  contacts__icon_email">
+                    <a class="contacts__contact-link" href="mailto:vadimveberg@gmail.com" target="_blank">
+                        <svg class="contacts__contact-icon  contacts__contact-icon--email">
                             <use xlink:href="#email"></use>
                         </svg>
-                        <span>vadimveberg@gmail.com</span>
+                        <span class="contacts__contact-text footer__contact-text">vadimveberg@gmail.com</span>
                     </a>
                 </div>                
             </div>
-            <div class="col-lg-3">
-                <div class="footer__links">
-                    <button class="button button_pink footer__call-button">
+            <!--TODO break this block for 576px:-->
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                    <button class="button footer__button button--pink footer__button--orange">
                         Заказать звонок
                     </button>
                     <div class="social footer__social">
@@ -36,21 +44,21 @@
                             </svg>
                         </a>
                         <a class="social__link" href="https://github.com/VadimVeberg" target="_blank">
-                            <svg class="social__icon social__icon_inst">
-                                <use xlink:href="#github"></use>
-                            </svg>
-                        </a>
-                        <a class="social__link" href="https://www.instagram.com/fakecomfort/" target="_blank">
                             <svg class="social__icon social__icon_github">
                                 <use xlink:href="#instagram"></use>
                             </svg>
                         </a>
+                        </a>
+                        <a class="social__link" href="https://hh.ru/resume/5c0da7c0ff07819e2f0039ed1f64367a426b7a" target="_blank">
+                            <svg class="social__icon social__icon_hh">
+                                <use xlink:href="#hh"></use>
+                            </svg>
+                        </a>
                     </div> <!-- ./social-->
-                </div> <!-- ./footer__links-->
             </div>
         </div>  <!--./row-->
     </div> <!-- ./container-->
-    <div class="footer__copyright">
-        <small class="footer__copyright__text">© Вадим Веберг, 2018-2020</small>
+    <div class="copyright">
+        <small class="copyright__text">© Вадим Веберг, 2018-2020</small>
     </div>
 </footer>

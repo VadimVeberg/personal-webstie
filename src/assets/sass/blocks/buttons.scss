@@ -11,7 +11,7 @@
         outline: none;
     }
 
-    &_pink {
+    &--pink {
         width: 207px;
         height: 45px;
 
@@ -31,7 +31,7 @@
         }
     }
 
-    &_orange {
+    &--orange {
         color: $white;
 
         font-size: 18px;

@@ -1,0 +1,44 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 35px 30px 40px;
+
+    background-color: $white;
+    outline: none;
+}
+
+.contact-form__title {
+    font-size: 24px;
+    font-weight: 700;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form__label {
+    font-size: 15px;
+    font-weight: 500;
+
+    margin: 40px 0 8px;
+}
+
+.contact-form__input {
+    height: 47px;
+
+    padding: 7px 15px;
+
+    font-size: 17px;
+
+    border: 1px solid lighten($gray, 10%);
+
+    &:focus {
+        outline: none;
+
+        border: 2px solid $gray;
+    }
+}
+
+.contact-form__button {
+    margin: 40px auto 0;
+}

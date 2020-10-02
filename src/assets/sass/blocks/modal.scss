@@ -1,0 +1,30 @@
+.modal {
+
+}
+
+.modal__overlay {
+    position:fixed;
+    top:0;
+    left:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    // display: none ;
+
+    background:rgba($color: #000000, $alpha: .6);
+    z-index: 20;
+}
+
+.modal__contact-form {
+    width: 455px;
+    height: 420px;
+
+    @media (max-width: 576px) {
+        width: 100%;
+        height: 100%;
+    }
+}

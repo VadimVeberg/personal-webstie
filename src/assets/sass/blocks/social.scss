@@ -3,6 +3,11 @@
     align-items: flex-end;
 }
 
+.social__link {
+    display: flex;
+    align-items: flex-end;
+}
+
 .social__icon {
     fill: $gray;
 
@@ -15,14 +20,16 @@
         margin-left: 0;
     }
 
-    &_inst {
+    &_github {
         height: 24px;
         width: 24px;
     }
 
-    &_github {
-        height: 24px;
-        width: 24px;
+    &_hh {
+        height: 34px;
+        width: 34px;
+
+        margin-bottom: -7px;
     }
 
     &:hover {

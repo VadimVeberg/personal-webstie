@@ -11,17 +11,17 @@
     @media (max-width: 576px) {
         padding: 0 20px;
     }
-}
 
-.column-center-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &--column-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
+//TODO delete if unneccessary
+// .align-right-container {
+//     width: 100%;
 
-.align-right-container {
-    width: 100%;
-
-    display: flex;
-    justify-content: flex-end;
-}
+//     display: flex;
+//     justify-content: flex-end;
+// }
