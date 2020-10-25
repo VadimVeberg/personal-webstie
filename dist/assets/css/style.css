@@ -2322,7 +2322,7 @@ a {
 }
 
 .slider {
-    width: 100%;
+    width: 95%;
     position: relative;
 }
 
@@ -2349,11 +2349,11 @@ a {
 
 .slider__button--prev {
     transform: rotate(180deg);
-    left: -30px;
+    left: -15px;
 }
 
 .slider__button--next {
-    right: -30px;
+    right: -15px;
 }
 
 .slider__inner {
@@ -2362,19 +2362,17 @@ a {
 
 .slider__wrapper {
     display: flex;
-    justify-content: space-between;
     transition: 0.4s all cubic-bezier(0.34, 0.05, 0.02, 1.02);
 }
 
 .slider__item {
-    flex-basis: 33.33%;
     height: 380px;
     position: relative;
     text-align: center;
 }
 
 .slider__image {
-    width: 100%;
+    width: 93%;
     height: 288px;
     margin-bottom: 37px;
     -o-object-fit: cover;
@@ -2387,6 +2385,7 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
+    padding: 0 12px;
     color: #8993ad;
     font-size: 20px;
     font-weight: 700;

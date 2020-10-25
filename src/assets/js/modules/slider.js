@@ -1,12 +1,25 @@
-const slider = ({sliderSelector, slidesCount, nextButtonSelector, prevButtonSelector}) => {
+const slider = ({sliderSelector, nextButtonSelector, prevButtonSelector}) => {
     const slider = document.querySelector(sliderSelector),
         sliderWrapper = slider.querySelector('.slider__wrapper'),
         nextButton = slider.querySelector(nextButtonSelector),
-        prevButton = slider.querySelector(prevButtonSelector);
+        prevButton = slider.querySelector(prevButtonSelector),
+        sliderFiled = sliderWrapper.closest('.slider__inner');
 
     let slides = slider.querySelectorAll('.slider__item');
-    const step = +slides[0].clientWidth,
-        sliderWidth = step * slidesCount * 2;
+    let step;
+
+    if (window.innerWidth > 1200) {
+        step = parseInt(sliderFiled.clientWidth /3);
+    } else if (window.innerWidth <= 1200 && window.innerWidth > 768) {
+        step = parseInt(sliderFiled.clientWidth /2);
+    } else {
+        step = parseInt(sliderFiled.clientWidth);
+    }
+    
+    const sliderWidth = step * slides.length * 2;
+
+    let firstSlideIndex = 0,
+        lastSlideIndex = slides.length * 2 - 1;
 
     const initSlider = () => {
         const slidesClones = Array.from(slides).map(slide => slide.cloneNode(true));
@@ -19,6 +32,7 @@ const slider = ({sliderSelector, slidesCount, nextButtonSelector, prevButtonSele
         });
 
         slides = sliderWrapper.children;
+        slides.forEach(slide => slide.style.width = step + 'px');
 
         sliderWrapper.style.cssText = `
             position: relative;
@@ -26,8 +40,9 @@ const slider = ({sliderSelector, slidesCount, nextButtonSelector, prevButtonSele
 
             width: ${sliderWidth}px;
         `;
+        
     };
-
+    
     const cycleArr = (arr, direction) => {
         const first = arr[0],
             last = arr[arr.length - 1];
@@ -47,9 +62,6 @@ const slider = ({sliderSelector, slidesCount, nextButtonSelector, prevButtonSele
     };
     
     initSlider();
-
-    let firstSlideIndex = 0,
-        lastSlideIndex = slidesCount * 2 - 1;
 
     let sliderOffset = 0,
         itemsAndPositions = Array.from(slides).map(slide => ({slide, position: 0}));

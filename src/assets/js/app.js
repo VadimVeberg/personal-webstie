@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
     forms();
     scrolling();
     slider({
-        slidesCount: 3,
         nextButtonSelector: '.slider__button--next',
         prevButtonSelector: '.slider__button--prev',
         sliderSelector: '.slider'
