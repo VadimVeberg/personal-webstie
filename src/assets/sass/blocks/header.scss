@@ -1,6 +1,8 @@
 .header {
     padding-left: 0;
     background-color: $light_gray;
+
+    z-index: 14;
 }
 
 .header__container {
@@ -33,18 +35,23 @@
     flex-grow: 1;
 
     @media (max-width: 992px) {
-        display: flex;
-        order: 3;
-        flex-basis: 100%;
+        visibility: hidden;
+        position: absolute;
+        width: 88%;
+        top: 85px;
 
-        z-index: 0;
+        z-index: 12;
+    }
+
+    @media (max-width: 576px) {
+        top: 58px;
     }
 }
 
 .header__site-list {
     @media (max-width: 992px) {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
         width: 100%;
@@ -68,6 +75,9 @@
 
     color: $black;
 
+    @media (max-width: 992px) {
+        margin: 0;
+    }
     &:hover {
         color: $pink;
 

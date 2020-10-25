@@ -1,0 +1,20 @@
+.close-button {
+    padding: 0;
+
+    background: transparent;
+    border: none;
+
+    width: 18px;
+    height: 18px;
+
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.close-button__icon {
+    width: 100%;
+    height: 100%;
+}

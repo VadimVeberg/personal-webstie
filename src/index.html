@@ -16,11 +16,16 @@ title: HomePage
             <div class="circle intro__circle"></div>
             <img class="author intro__author" src="assets/img/me.png">
         </div>
-    </div> <!-- ./container-->
-</section> <!-- ./intro-->
+        <span class="flying-symbol flying-symbol--curly-brace-left">{ }</span>  
+        <span class="flying-symbol flying-symbol--number">#</span>
+        <span class="flying-symbol flying-symbol--div-tag-top">&lt;div&gt;</span>
+        <span class="flying-symbol flying-symbol--div-tag-bottom">&lt;div&gt</span>
+        <span class="flying-symbol flying-symbol--empty-tag">&lt;/&gt;</span>
+    </div> 
+</section> 
 
 <section class="services" id="services">
-    <div class="container container--column-center">
+    <div class="container services__container container--column-center">
             <h2 class="h2 services__title">Что я делаю</h2>
             <div class="container services__container">
                 <div class="row no-gutters">
@@ -44,35 +49,44 @@ title: HomePage
                         <p class="services__text">Исправление и&nbsp;доработка
                             существующей вёрстки</p>
                     </div>
-                </div><!-- ./row-->
-            </div> <!--./container-->
+                </div>
+            </div> 
             <button class="button services__button button--orange">
                 Узнать стоимость
             </button>
-    </div> <!--./container-->
-</section> <!-- ./services-->
+    </div> 
+</section> 
 
 <!--TODO break-->
 <section class="examples" id="examples">
     <div class="container container--column-center">
         <h2 class="h2 examples__title">Примеры моих работ</h2>
-        <!-- <div class="container examples-carousel">
-            <div class="row no-gutters">
-                <div class="col-lg-4 examples-carousel__item">
-                    <img class="examples-carousel__img">
-                    <p class="examples-carousel__item__text">Coming soon</p>
+        <div class="slider">
+            <button class="slider__button slider__button--prev"></button>
+            <button class="slider__button slider__button--next"></button>
+            <div class="slider__inner">
+                <div class="slider__wrapper">
+                        <div class="slider__item">
+                            <a class="slider__link" href="https://unsplash-photos.ru/" target="_blank">
+                                <img class="slider__image" src="assets/img/examples/instagram_analog.png" alt="Упрощенный аналог instagram">
+                                <p class="slider__text">Упрощенный аналог веб-интерфейcа Instagram</p>
+                            </a>
+                        </div>
+                        <div class="slider__item">
+                            <a class="slider__link" href="https://github.com/VadimVeberg/prices_scrapeer" target="_blank">
+                                <img class="slider__image" src="assets/img/examples/scrapper.png" alt="Веб-скрапер">
+                                <p class="slider__text">Веб-скрапер для сбора и анализа данных</p>
+                            </a>
+                        </div>
+                        <div class="slider__item">
+                            <a class="slider__link" href="https://github.com/VadimVeberg/prices_scrapeer" target="_blank">
+                                <img class="slider__image" src="assets/img/examples/psyho.png" alt="Упрощенный аналог instagram">
+                                    <p class="slider__text">Сайт психолога Веры Антоновой</p>
+                            </a>
+                        </div>
                 </div>
-                <div class="col-lg-4 examples-carousel__item">
-                    <img class="examples-carousel__img">
-                    <p class="examples-carousel__item__text">Coming soon</p>
-                </div>
-                <div class="col-lg-4 examples-carousel__item">
-                    <img class="examples-carousel__img">
-                    <p class="examples-carousel__item__text">Coming soon</p>
-                </div>
-            </div> 
-        </div> -->
-        <!--./examples-carousel-->
+            </div>
+        </div>
         <button class="button examples__button button--orange">
             Заказать проект
         </button>
@@ -88,16 +102,23 @@ title: HomePage
             в&nbsp;зависимости от&nbsp;сложности задач.
         </p>
     </div>
+    <span class="flying-symbol flying-symbol--curly-brace-left">{ }</span>
+    <span class="flying-symbol flying-symbol--number">#</span>
+    <span class="flying-symbol flying-symbol--div-tag">&lt;div&gt;</span>
+    <span class="flying-symbol flying-symbol--curly-brace-right">{ }</span>
+    <span class="flying-symbol flying-symbol--empty-tag">&lt;/&gt;</span>
 </section>
 
+<!--TODO верстка modal для горизтальное ориентации устройства-->
 <div class="modal">
     <div class="modal__overlay">
-        <!--TODO break contact-form design-->
-        <!--TODO add action to form-->
         <form class="contact-form modal__contact-form" method="post" action="">
-            <!--TODO break form desing on small devices and close-button layout-->
-            <button class="close-button contact-form __close-button"></button>
-            <span class="contact-form__title">Оставьте ваши данные для связи</span>
+            <button class="close-button contact-form__close-button">
+                <svg class="close-button__icon">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </button>
+            <span class="contact-form__title">Оставьте ваши данные для&nbsp;связи</span>
             <label class="contact-form__label" for="userName">Ваше имя:</label>
             <input class="contact-form__input" required type="text" placeholder="Имя" name="userName">
             <label class="contact-form__label" for="userPhone">Номер для связи:</label>

@@ -15,6 +15,7 @@ const imagemin = require("gulp-imagemin");
 const del = require("del");
 const panini = require("panini");
 const browsersync = require("browser-sync").create();
+const webpack = require("webpack-stream");
 
 
 /* Paths */
@@ -101,17 +102,52 @@ function css() {
 
 function js() {
     return src(path.src.js, {base: './src/assets/js/'})
-        .pipe(plumber())
-        .pipe(rigger())
-        .pipe(gulp.dest(path.build.js))
-        .pipe(uglify())
-        .pipe(rename({
-            suffix: ".min",
-            extname: ".js"
+        .pipe(webpack({
+            mode: 'development',
+            output: {
+                filename: 'app.js'
+            },
+            watch: false,
+            devtool: "source-map",
+            module: {
+                rules: [
+                    {
+                    test: /\.m?js$/,
+                    exclude: /(node_modules|bower_components)/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                        presets: [['@babel/preset-env', {
+                            debug: true,
+                            corejs: 3,
+                            useBuiltIns: "usage"
+                        }]]
+                        }
+                    }
+                    }
+                ]
+                }
         }))
         .pipe(dest(path.build.js))
         .pipe(browsersync.stream());
 }
+
+
+
+
+//     return src(path.src.js, {base: './src/assets/js/'})
+//         .pipe(plumber())
+//         .pipe(rigger())
+//         .pipe(gulp.dest(path.build.js))
+//         //TODO разобраться с минификатором!
+//         // .pipe(uglify())
+//         .pipe(rename({
+//             suffix: ".min",
+//             extname: ".js"
+//         }))
+//         .pipe(dest(path.build.js))
+//         .pipe(browsersync.stream());
+// }
 
 function images() {
     return src(path.src.images)

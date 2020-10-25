@@ -1,4 +1,6 @@
 .cost{
+    position: relative;
+
     height: auto;
     
     background: linear-gradient(185deg, #ff2f96 35%, #ff8f5a  );
@@ -7,7 +9,7 @@
 
 .cost__container {
     padding: 0;
-    padding: 85px 7% 115px;
+    padding: 85px 40px 115px;
 
     @media (max-width: 992px) {
         padding: 85px 40px;
@@ -31,5 +33,138 @@
 
     @media (max-width: 576px) {
         font-size: 15px;
+    }
+}
+
+.cost__flying-symbol {
+
+    display: inline-block;
+    position: absolute;
+
+    z-index: 10;
+
+    &--curly-brace-left {
+        top: 20px;
+        left: 200px;
+
+        animation: .5s cost-curly-brace-left ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+        
+        @media (max-width: 1200px) {
+            top: 10px;
+            left: 100px;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }        
+    }
+
+    &--number {
+        bottom: 30px;
+        left: 150px;
+
+        animation: .9s cost-number ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &--div-tag {
+        bottom: 15px;
+        right: 300px;
+
+        animation: .7s cost-div-tag ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+
+        @media (max-width: 992px) {
+            transform: translate(-300px, -40px) rotate(15deg);
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    &--empty-tag {
+        top: 80px;
+        right: 100px;
+
+        animation: .9s cost-empty-tag ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+        transform: translate(40px, -300px) rotate(-35deg);
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+       
+    &--curly-brace-right {
+        bottom: 80px;
+        right: 100px;
+
+        animation: .4s cost-curly-brace-right ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% { 
+        opacity: 0;   
+    }
+    100% {
+        opacity: 1;   
+    }
+}
+
+@keyframes cost-curly-brace-left {
+    0% { 
+        transform: translate(50px, 50px) rotate(25deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(45deg);
+    }
+}
+
+@keyframes cost-number {
+    0% { 
+        transform: translate(40px, -40px) rotate(-25deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(15deg);
+    }
+}
+
+@keyframes cost-div-tag {
+    0% { 
+        transform: translate(-40px, -40px) rotate(35deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(15deg);
+    }
+}
+
+@keyframes cost-empty-tag {
+    0% { 
+        transform: translate(-40px, -40px) rotate(35deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(-35deg);
+    }
+}
+
+@keyframes cost-curly-brace-right {
+    0% { 
+        transform: translate(-40px, -40px) rotate(30deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(-20deg);
     }
 }

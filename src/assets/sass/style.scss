@@ -42,6 +42,7 @@ p, h1, h2, h3 {
 @import "blocks/links";
 @import "blocks/titles";
 @import "blocks/containers";
+@import "blocks/flying-symbol";
 
 @import "blocks/page";
 @import "blocks/main-nav";
@@ -58,6 +59,7 @@ p, h1, h2, h3 {
 @import "blocks/services";
 
 @import "blocks/examples";
+@import "blocks/slider";
 
 @import "blocks/cost";
 
@@ -68,5 +70,9 @@ p, h1, h2, h3 {
 
 @import "blocks/modal";
 @import "blocks/contact-form";
+@import "blocks/close-button";
+
+@import "blocks/animate";
+
 
 

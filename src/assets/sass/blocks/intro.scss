@@ -1,4 +1,6 @@
 .intro {
+    position: relative;
+
     height: 664px;
 
     background-color: $light_gray;
@@ -136,5 +138,162 @@
         bottom: 0;
 
         height: 88%;
+    }
+}
+
+.intro__flying-symbol {
+
+    display: inline-block;
+    position: absolute;
+    color: $pink;
+
+    z-index: 10;
+
+    &--curly-brace-left {
+        top: 100px;
+        left: 100px;
+
+        animation: .5s intro-curly-brace-left ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+        
+        @media (max-width: 1200px) {
+            left: 100px;
+        }
+
+        @media (max-width: 576px) {
+            left: 50px;
+            top: 25px;
+            font-size: 25px;
+        }        
+    }
+
+    &--number {
+        bottom: 350px;
+        left: 150px;
+
+        animation: .9s intro-number ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+
+        @media (max-width: 1600px) {
+            bottom: 50px;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    &--div-tag-top {
+        top: 100px;
+        left: 800px;
+
+        animation: .6s intro-div-tag-top ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+
+        @media (max-width: 1600px) {
+            left: 500px;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    &--empty-tag {
+        bottom: 30px;
+        left: 400px;
+
+        animation: .9s intro-empty-tag ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+
+        @media (max-width: 1600px) {
+            bottom: 130px;
+        }
+
+        @media (max-width: 992px) {
+            bottom: auto;
+            left: 300px;
+            top: 30px;
+        }
+
+        @media (max-width: 576px) {
+            top: 10px;
+            left: 150px;
+        }
+    }
+
+       
+    &--div-tag-bottom {
+        bottom: 80px;
+        left: 550px;
+
+        animation: .4s intro-div-tag-bottom ease-out, .3s fade-in ease-in;
+        animation-fill-mode: forwards;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+
+        @media (max-width: 576px) {
+            display: block;
+            bottom: auto;
+            top: 20px;
+            left: auto;
+            right: 50px;
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% { 
+        opacity: 0;   
+    }
+    100% {
+        opacity: 1;   
+    }
+}
+
+@keyframes intro-curly-brace-left {
+    0% { 
+        transform: translate(50px, 50px) rotate(25deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(45deg);
+    }
+}
+
+@keyframes intro-number {
+    0% { 
+        transform: translate(40px, -40px) rotate(-25deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(15deg);
+    }
+}
+
+@keyframes intro-div-tag-top {
+    0% { 
+        transform: translate(-40px, -40px) rotate(35deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(-15deg);
+    }
+}
+
+@keyframes intro-empty-tag {
+    0% { 
+        transform: translate(-40px, -40px) rotate(35deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(-35deg);
+    }
+}
+
+@keyframes intro-div-tag-bottom {
+    0% { 
+        transform: translate(-40px, -40px) rotate(-30deg);   
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(20deg);
     }
 }

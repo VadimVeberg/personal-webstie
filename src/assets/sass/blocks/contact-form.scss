@@ -1,6 +1,9 @@
 .contact-form {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+
+    position: relative;
 
     padding: 35px 30px 40px;
 
@@ -20,6 +23,8 @@
     font-size: 15px;
     font-weight: 500;
 
+    color: darken($gray, 40%);
+
     margin: 40px 0 8px;
 }
 
@@ -29,7 +34,6 @@
     padding: 7px 15px;
 
     font-size: 17px;
-
     border: 1px solid lighten($gray, 10%);
 
     &:focus {
@@ -41,4 +45,14 @@
 
 .contact-form__button {
     margin: 40px auto 0;
+
+    @media (max-width: 576px) {
+        width: 247px;
+    }
+}
+
+.contact-form__close-button {
+    position: absolute;
+    top: 13px; 
+    right: 10px;
 }
