@@ -11,7 +11,7 @@ I also used Bottstrap 4 columns for some blocks of page.
 # Adaptivity
 All elements of page displayed in right way on every screen size.
 
-![Adaptive] https://vadimveberg.ru/assets/img/git_readme/Adaptive.png
+![Adaptive] (https://vadimveberg.ru/assets/img/git_readme/Adaptive.png)
 
 # Building
 
