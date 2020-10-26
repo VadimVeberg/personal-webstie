@@ -8,8 +8,6 @@ const removeComments = require('gulp-strip-css-comments');
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const cssnano = require("gulp-cssnano");
-const rigger = require("gulp-rigger");
-const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
@@ -43,8 +41,6 @@ const path = {
     },
     clean: "./dist"
 };
-
-
 
 /* Tasks */
 function browserSync(done) {
