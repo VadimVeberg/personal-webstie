@@ -9,8 +9,15 @@ I used new HTML5 features like semantic elements. All CSS code is written by BEM
 I also used Bottstrap 4 columns for some blocks of page.
 
 # Adaptivity
-I used @media queries, bootstrap columns and containers to make all elements of page displayed in right way on every screen size. <img src="https://vadimveberg.ru/assets/img/git_readme/Adaptive.png" width="200px" alt="Adaptive">
+I used @media queries, bootstrap columns and containers to make all elements of page displayed in right way on every screen size. <img src="https://vadimveberg.ru/assets/img/git_readme/Adaptive.png" width="350px" alt="Adaptive">
 
+# Animations
+Every animation on this site was created using css transitions or requestAnimationFrame(), so they works smooth and doesn't load CPU.
+
+<img src="https://vadimveberg.ru/assets/img/git_readme/Animation_1.gif" width="800px" alt="Animation_1">
+
+# Slider
+I made infinity slider that works also on mobile devices. My script automatically define count of showed slides per page based on current screen size. See more at [slider](https://github.com/VadimVeberg/personal-webstie/blob/master/src/assets/js/modules/slider.js) module
 
 # Building
 
