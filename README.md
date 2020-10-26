@@ -23,5 +23,12 @@ I've made infinity slider that works also on mobile devices. My script automatic
 <img src="https://vadimveberg.ru/assets/img/git_readme/Slider.gif" width="500px" alt="Animation_1">
 
 # Run and build
-This project is builded with Gulp and Webpack. You can run this site on your local host after forking this repo, istalling all dependecies (**npm i**) and typed in terminal **gulp** in root directory.
- To get minifiend production build you must run **gulp buildProd** command. See more gulp settings in [gulpfile](https://github.com/VadimVeberg/personal-webstie/blob/master/gulpfile.js)
+This project is builded with Gulp and Webpack. You can run this site on your local host after forking this repo, istalling all dependecies (**npm i**) and typed in terminal
+### `gulp`
+
+in root directory.
+ To get minifiend production build you must run
+ 
+ ### `gulp buildProd`
+ 
+ command. See more gulp settings in [gulpfile](https://github.com/VadimVeberg/personal-webstie/blob/master/gulpfile.js)
