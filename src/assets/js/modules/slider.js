@@ -8,9 +8,9 @@ const slider = ({sliderSelector, nextButtonSelector, prevButtonSelector}) => {
     let slides = slider.querySelectorAll('.slider__item');
     let step;
 
-    if (window.innerWidth > 1200) {
+    if (slider.clientWidth > 1000) {
         step = parseInt(sliderFiled.clientWidth /3);
-    } else if (window.innerWidth <= 1200 && window.innerWidth > 768) {
+    } else if (slider.clientWidth <= 1000 && slider.clientWidth > 500) {
         step = parseInt(sliderFiled.clientWidth /2);
     } else {
         step = parseInt(sliderFiled.clientWidth);

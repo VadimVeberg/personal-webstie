@@ -2,19 +2,16 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link  rel='icon' type='image/png' href='apple-touch-icon.png' />
     
-    <!-- Useful meta tags -->
-    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge">-->
     <meta name="viewport" content="width=device-width">
-    <!-- <meta name="robots" content="index, follow, noodp">
-    <meta name="googlebot" content="index, follow">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
     <meta name="keywords" content="">
-    <meta name="description" content=""> --> 
+    <meta name="description" content="self-presentation site"> 
     
-    <title>HomePage</title>
+    
+    <title>Vadim Vebrg</title>
 </head>
 <body>
 
@@ -170,12 +167,12 @@
                 </div>
                 <div class="intro__visual">
                     <div class="circle intro__circle"></div>
-                    <img class="author intro__author" src="assets/img/me.png">
+                    <img class="author intro__author" src="assets/img/me.png" alt="Вадим Веберг">
                 </div>
                 <span class="flying-symbol flying-symbol--curly-brace-left">{ }</span>  
                 <span class="flying-symbol flying-symbol--number">#</span>
                 <span class="flying-symbol flying-symbol--div-tag-top">&lt;div&gt;</span>
-                <span class="flying-symbol flying-symbol--div-tag-bottom">&lt;div&gt</span>
+                <span class="flying-symbol flying-symbol--div-tag-bottom">&lt;div&gt;</span>
                 <span class="flying-symbol flying-symbol--empty-tag">&lt;/&gt;</span>
             </div> 
         </section> 
@@ -186,22 +183,22 @@
                     <div class="container services__container">
                         <div class="row no-gutters">
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
-                                <img class="services__img" src="assets/img/services/tools-and-utensils.png">
-                                <p class="services__text">Вёрстка лендинг&mdash;страниц
+                                <img class="services__img" src="assets/img/services/tools-and-utensils.png" alt="Верстка">
+                                <p class="services__text">Вёрстка лендинг-страниц
                                     и&nbsp;сайтов любой сложности</p>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
-                                <img class="services__img" src="assets/img/services/responsive.png">
+                                <img class="services__img" src="assets/img/services/responsive.png" alt="Адаптивная верстка">
                                 <p class="services__text">Адаптивная вёрстка под все
                                     браузеры и&nbsp;устройства</p>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
-                                <img class="services__img" src="assets/img/services/programming.png">
-                                <p class="services__text">Frontend&mdash;разработка
+                                <img class="services__img" src="assets/img/services/programming.png" alt="Программирование">
+                                <p class="services__text">Frontend-разработка
                                     и&nbsp;программирование</p>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 services__item">
-                                <img class="services__img" src="assets/img/services/coding.png">
+                                <img class="services__img" src="assets/img/services/coding.png" alt="Исправление верстки">
                                 <p class="services__text">Исправление и&nbsp;доработка
                                     существующей вёрстки</p>
                             </div>
@@ -213,7 +210,6 @@
             </div> 
         </section> 
         
-        <!--TODO break-->
         <section class="examples" id="examples">
             <div class="container container--column-center">
                 <h2 class="h2 examples__title">Примеры моих работ</h2>
@@ -232,12 +228,6 @@
                                     <a class="slider__link" href="https://github.com/VadimVeberg/prices_scrapeer" target="_blank">
                                         <img class="slider__image" src="assets/img/examples/scrapper.png" alt="Веб-скрапер">
                                         <p class="slider__text">Веб-скрапер для сбора и анализа данных</p>
-                                    </a>
-                                </div>
-                                <div class="slider__item">
-                                    <a class="slider__link" href="https://github.com/VadimVeberg/prices_scrapeer" target="_blank">
-                                        <img class="slider__image" src="assets/img/examples/psyho.png" alt="Упрощенный аналог instagram">
-                                            <p class="slider__text">Сайт психолога Веры Антоновой</p>
                                     </a>
                                 </div>
                         </div>
@@ -265,20 +255,19 @@
             <span class="flying-symbol flying-symbol--empty-tag">&lt;/&gt;</span>
         </section>
         
-        <!--TODO верстка modal для горизтальное ориентации устройства-->
         <div class="modal">
             <div class="modal__overlay">
-                <form class="contact-form modal__contact-form" method="post" action="">
+                <form class="contact-form modal__contact-form" method="post" action="assets/server.php">
                     <button class="close-button contact-form__close-button">
                         <svg class="close-button__icon">
                             <use xlink:href="#close"></use>
                         </svg>
                     </button>
                     <span class="contact-form__title">Оставьте ваши данные для&nbsp;связи</span>
-                    <label class="contact-form__label" for="userName">Ваше имя:</label>
-                    <input class="contact-form__input" required type="text" placeholder="Имя" name="userName">
-                    <label class="contact-form__label" for="userPhone">Номер для связи:</label>
-                    <input class="contact-form__input" required type="text" placeholder="Номер телефона" name="userPhone">
+                    <label class="contact-form__label" for="user-name">Ваше имя:</label>
+                    <input class="contact-form__input" id="user-name" required type="text" placeholder="Имя" name="name">
+                    <label class="contact-form__label" for="user-phone">Номер для связи:</label>
+                    <input class="contact-form__input" id="user-phone" required type="text" placeholder="Номер телефона" name="phone">
                     <button class="contact-form__button button button--orange" type="submit">Перезвонить мне</button>
                 </form>
             </div>
@@ -288,7 +277,7 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="row no-gutters">
-                <div class="col-lg-4 col-md-3 col-sm-12">
+                <div class="col-lg-4 col-md-3 col-sm-12 col-12">
                     <nav class="nav footer__nav">
                         <ul class="site-list">
                             <li class="site-list__site-item footer__site-item">
@@ -303,7 +292,7 @@
                         </ul>                 
                     </nav>
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="col-lg-5 col-md-6 col-sm-12 col-12">
                     <div class="contacts footer__contacts">
                         <a class="contacts__contact-link" href="tel:+79955063256" target="_blank">
                             <svg class="contacts__contact-icon contacts__contact-icon--phone">
@@ -319,8 +308,7 @@
                         </a>
                     </div>                
                 </div>
-                <!--TODO break this block for 576px:-->
-                <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <button class="button footer__button button--pink footer__button--orange">
                             Заказать звонок
                         </button>
@@ -334,7 +322,6 @@
                                 <svg class="social__icon social__icon_github">
                                     <use xlink:href="#github"></use>
                                 </svg>
-                            </a>
                             </a>
                             <a class="social__link" href="https://hh.ru/resume/5c0da7c0ff07819e2f0039ed1f64367a426b7a" target="_blank">
                                 <svg class="social__icon social__icon_hh">
@@ -351,9 +338,7 @@
     </footer><!-- </div> -->
 
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-<script src="assets/js/app.js"></script>
+<script src="assets/js/app.min.js"></script>
 
 </body>
 </html>

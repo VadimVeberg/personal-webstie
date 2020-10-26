@@ -40,7 +40,7 @@ const forms = () => {
 
         const formData = new FormData(form);
 
-        postData('../../server.php', formData)
+        postData('../server.php', formData)
         .then(res => { 
         })
         .catch((err) => {

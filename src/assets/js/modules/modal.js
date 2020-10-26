@@ -7,7 +7,8 @@ const closeModal = (modalSelector) => {
     modalElem.classList.remove('animate-fade-in');
     modalElem.classList.add('animate-fade-out');
     setTimeout(() => modalElem.style.visibility = 'hidden', 300);
-    document.body.style.overflow = '';
+    document.body.style.overflow = ''; 
+    document.body.style.position = ''; 
 };
 
 const modal = (triggerSelectror, modalSelector) => {
@@ -23,6 +24,7 @@ const modal = (triggerSelectror, modalSelector) => {
         modalElem.classList.remove('animate-fade-out');
         modalElem.classList.add('animate-fade-in');
         document.body.style.overflow = 'hidden';  
+        document.body.style.position = 'fixed;';  
     };
 
     modalTrigger.forEach(item => {

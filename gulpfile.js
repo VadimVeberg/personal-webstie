@@ -19,7 +19,7 @@ const webpack = require("webpack-stream");
 
 
 /* Paths */
-var path = {
+const path = {
     build: {
         html: "dist/",
         js: "dist/assets/js/",
@@ -54,10 +54,6 @@ function browserSync(done) {
         },
         port: 3000
     });
-}
-
-function browserSyncReload(done) {
-    browsersync.reload();
 }
 
 function html() {
@@ -105,7 +101,7 @@ function js() {
         .pipe(webpack({
             mode: 'development',
             output: {
-                filename: 'app.js'
+                filename: 'app.min.js'
             },
             watch: false,
             devtool: "source-map",
@@ -132,22 +128,34 @@ function js() {
         .pipe(browsersync.stream());
 }
 
-
-
-
-//     return src(path.src.js, {base: './src/assets/js/'})
-//         .pipe(plumber())
-//         .pipe(rigger())
-//         .pipe(gulp.dest(path.build.js))
-//         //TODO разобраться с минификатором!
-//         // .pipe(uglify())
-//         .pipe(rename({
-//             suffix: ".min",
-//             extname: ".js"
-//         }))
-//         .pipe(dest(path.build.js))
-//         .pipe(browsersync.stream());
-// }
+function jsProd() {
+    return src(path.src.js, {base: './src/assets/js/'})
+        .pipe(webpack({
+            mode: 'production',
+            output: {
+                filename: 'app.min.js'
+            },
+            module: {
+                rules: [
+                  {
+                    test: /\.m?js$/,
+                    exclude: /(node_modules|bower_components)/,
+                    use: {
+                      loader: 'babel-loader',
+                      options: {
+                        presets: [['@babel/preset-env', {
+                            corejs: 3,
+                            useBuiltIns: "usage"
+                        }]]
+                      }
+                    }
+                  }
+                ]
+              }
+        }))
+        .pipe(dest(path.build.js))
+        .pipe(browsersync.stream());
+}
 
 function images() {
     return src(path.src.images)
@@ -172,8 +180,8 @@ function watchFiles() {
 }
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
+const buildProd = gulp.series(clean, gulp.parallel(html, css, jsProd, images, fonts));
 const watch = gulp.parallel(build, watchFiles, browserSync);
-
 
 
 /* Exports Tasks */
@@ -185,4 +193,6 @@ exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.fonts = fonts;
+exports.buildProd = buildProd;
 exports.default = watch;
+

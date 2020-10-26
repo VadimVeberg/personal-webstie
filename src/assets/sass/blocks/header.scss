@@ -44,7 +44,8 @@
     }
 
     @media (max-width: 576px) {
-        top: 58px;
+        top: 65px;
+        left: 25px;
     }
 }
 
@@ -57,12 +58,14 @@
         width: 100%;
         padding: 17px 0;
 
-        background-color: $white;
+        background-color: lighten($gray, 38%);
         border-radius: 10px;
+        border: 1px solid $black;
     }
 
     @media (max-width: 576px) {
         padding: 13px 0;
+        height: 46px;
     }
 }
 

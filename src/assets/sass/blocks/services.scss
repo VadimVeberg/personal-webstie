@@ -39,7 +39,6 @@
     flex-direction: column;
     align-items: center;
 
-    //TODO избавься от этих селекторов
     &:nth-child(1), &:nth-child(2) {
         @media (max-width: 992px) {
             margin-bottom: 80px;

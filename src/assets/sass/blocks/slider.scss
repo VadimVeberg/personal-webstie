@@ -1,7 +1,11 @@
 .slider {
-    width: 95%;
+    width: 70%;
 
     position: relative;
+    
+    @media(max-width: 576px) {
+        width: 90%;
+    }
 }
 
 .slider__button {
@@ -15,7 +19,7 @@
     border-radius: 50%;
     border: none;
     box-shadow: 0px 0px 10px -7px $black;
-    z-index: 25;
+    z-index: 10;
     cursor: pointer;
 
     &:focus {
@@ -29,10 +33,18 @@
     &--prev {
         transform: rotate(180deg);
         left: -15px;
+
+        @media(max-width: 576px) {
+            left: -28px;
+        }
     }
 
     &--next {
         right: -15px;
+
+        @media(max-width: 576px) {
+            right: -28px;
+        }
     }
 }
 
@@ -61,6 +73,10 @@
     margin-bottom: 37px;
 
     object-fit: cover;
+
+    @media(max-width: 576px) {
+        margin-bottom: 10px;
+    }
 }
 
 .slider__link {
@@ -74,7 +90,6 @@
 
     color: $gray;
     font-size: 20px;
-    font-weight: 700;
     line-height: 1.3;
 
     &:hover {

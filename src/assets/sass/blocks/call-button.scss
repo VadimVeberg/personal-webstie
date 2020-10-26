@@ -1,4 +1,5 @@
 .call-button {
+    position: relative;
         
     @media (max-width: 576px) {
         display: none;
@@ -22,7 +23,12 @@
 }
 
 .call-button__icon {
-    width: 100%;
-    height: 100%;
+    width: 13px;
+    height: 13px;
+
+    position: absolute;
+    top: 5px;
+    left: 6px;
+
     fill: $pink;
 }
