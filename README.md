@@ -23,4 +23,4 @@ I made infinity slider that works also on mobile devices. My script automaticall
 
 # Run and build
 This project is builded with Gulp and Webpack. You can run this site on your local host after forking this repo, istalling all dependecies (**npm i**) and typed in terminal **gulp** in root directory.
- To get minifyend production build you must run **gulp buildProd** command. See more gulp settings in [gulpfile](https://github.com/VadimVeberg/personal-webstie/blob/master/gulpfile.js)
+ To get minifiend production build you must run **gulp buildProd** command. See more gulp settings in [gulpfile](https://github.com/VadimVeberg/personal-webstie/blob/master/gulpfile.js)
