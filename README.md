@@ -9,7 +9,7 @@ I used new HTML5 features like semantic elements. All CSS code is written by BEM
 I also used Bottstrap 4 columns for some blocks of page.
 
 # Adaptivity
-All elements of page displayed in right way on every screen size.
+I used @media queries, bootstrap columns and containers to make all elements of page displayed in right way on every screen size
 
 ![Adaptive](https://vadimveberg.ru/assets/img/git_readme/Adaptive.png)
 
