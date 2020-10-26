@@ -19,6 +19,7 @@ Every animation on this site was created using css transitions or requestAnimati
 # Slider
 I made infinity slider that works also on mobile devices. My script automatically define count of showed slides per page based on current screen size. See more at [slider](https://github.com/VadimVeberg/personal-webstie/blob/master/src/assets/js/modules/slider.js) module
 
+<img src="https://vadimveberg.ru/assets/img/git_readme/Slider.gif" width="500px" alt="Animation_1">
 # Building
 
 #Installation
