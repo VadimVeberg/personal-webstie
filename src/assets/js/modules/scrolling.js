@@ -24,7 +24,7 @@ const scrolling = () => {
     }
 
     const quad = (timeFraction) => {
-        return Math.pow(timeFraction, 3)
+        return Math.pow(timeFraction, 3);
     }
     
     const linear = (timeFraction) => {
@@ -50,19 +50,6 @@ const scrolling = () => {
             }, toBlock, heightTop);
         });
     })
-
-    // scrollTopButton.addEventListener('click', (e) => {
-    //     e.preventDefault();
-    //     const widthTop = document.documentElement.scrollTop,
-    //         toBlock = document.querySelector('.characteristics-and-buy').getBoundingClientRect().top,
-    //         elemHeight = e.target.offsetHeight;
-
-    //     animate({
-    //         timing: quad,
-    //         draw: draw,
-    //         duration: 1000
-    //     }, toBlock, widthTop, elemHeight);
-    // });
 };
 
 
